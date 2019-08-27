@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>TUGAS JS-DOM</title>
+    <link rel="icon" href="img/logo1.jpg">
+  </head>
+  <body id="body">
+    <p>Pilih Warna Background</p>
+
+      <select onchange="myFunction(this)">
+
+        <option value="red">Red</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="white">Putih</option>
+      </select>
+    <p> Saat kamu memilih warna, background akan berubah</p>
+
+  </body>
+
+  <script type="text/javascript">
+    function myFunction(x){
+
+      var color = document.getElementById('body');
+      color.style.backgroundColor=x.value;
+
+     }
+
+  </script>
+</html>
